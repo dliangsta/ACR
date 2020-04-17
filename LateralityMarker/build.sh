@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t dev .
+docker build -t dliangsta/laterality_marker .

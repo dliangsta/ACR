@@ -1,2 +1,3 @@
 #/bin/bash
-sudo docker run --runtime=nvidia --rm -v "${PWD}/images":/tmp/images dliangsta/medstar python /tmp/marker.py
+export IMAGE_DIRECTORY="${PWD}/images"
+docker run --runtime=nvidia --rm -v $IMAGE_DIRECTORY:/tmp/images dliangsta/laterality_marker python /tmp/marker.py
